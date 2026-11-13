@@ -1,4 +1,4 @@
-const CACHE='elevor360d-recipes-v1-topads-3';
+const CACHE='elevor360d-recipes-v2-timer-50-curated';
 const ASSETS=['./','./index.html','./app.js','./recipes.json','./icon.svg','./manifest.webmanifest','./advertising/adverts.json'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
