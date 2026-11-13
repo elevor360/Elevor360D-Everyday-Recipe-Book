@@ -1,4 +1,9 @@
 {
-  "adverts": [],
-  "ads": []
+  "adverts": [
+    {
+      "title": "Holiday Advertisement",
+      "image": "images/my-banner.jpg",
+      "url": "https://example.com"
+    }
+  ]
 }
